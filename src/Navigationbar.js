@@ -1,13 +1,14 @@
 import React from 'react'
 import { Nav,Navbar,NavDropdown,Container,Form,Button } from 'react-bootstrap'
-
+import { Fragment } from 'react'
+import { Outlet } from 'react-router-dom'
 
 export default function Navigationbar() {
-  return (
+  return (<Fragment>
     <div>
         <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">MAG</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -44,5 +45,7 @@ export default function Navigationbar() {
       </Container>
     </Navbar>
     </div>
+    <Outlet/>
+    </Fragment>
   )
 }
