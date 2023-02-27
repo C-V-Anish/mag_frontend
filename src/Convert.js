@@ -14,7 +14,7 @@ export default function Convert() {
       id="ta1"
       />
       <div>
-      <Button variant="warning" size="lg" display="block"><AutorenewOutlinedIcon/></Button>
+      <Button variant="warning" size="lg"><AutorenewOutlinedIcon/></Button>
       </div>
     </div>
   )

@@ -11,16 +11,31 @@ body {
 .topic{
   color:aliceblue;
   margin-top: 90px;
+  margin-left: 30px;
   padding: 20px;
   text-align: center;
 }
 
-.heading{
-  padding: 20px;
-  color:lightyellow;
-  font-size: 150px;
-}
 
+.heading {
+  font-size: 150px;
+  background: linear-gradient(-45deg, #ec4808, #f80202, #e89a3e, #e89a3e);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
 .tag-line{
   color:lightyellow;
   margin-top: -25px;
@@ -62,6 +77,7 @@ body {
   right: 23%;
 }
 #ta1 {
+  resize: none;  
   position: relative;
   margin-top: 130px;
   margin-bottom: 60px;

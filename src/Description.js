@@ -13,7 +13,7 @@ export default function Description(){
         <div className="desc">
           <p>Transform any scene into a unique musical experience with our AI powered scene-to-music generator.</p>
           <br/>
-          <Button variant="outlined" color="error" onClick={handleClick}>Get Started</Button>
+          <Button variant="contained" color="error" onClick={handleClick}>Get Started</Button>
         </div>  
     )
 }
